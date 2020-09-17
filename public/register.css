@@ -1,0 +1,99 @@
+.register-container {
+    padding-top:70px;
+    display: flex;
+    width: 80%;
+    margin:auto;
+}
+
+.register-info {
+    flex: 4;
+    padding-right: 30px;
+}
+
+.register-info p {
+    font-size: 20px;
+}
+
+.form {
+    /* width: 500px; */
+    height: 70vh;
+    background-color: #EFEFEF;
+    padding: 50px;
+    /* position: absolute; */
+    /* top: 10vh; */
+    /* left: 50%; */
+  /* -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); */
+  border-radius: 50px;
+  overflow: scroll;
+  box-shadow: 5px 5px 25px 10px #f0f0f0;
+  font-size: 17px;
+  flex: 6;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .form-control-file {
+    display: block;
+    margin: 14px 0;
+  }
+
+  label {
+      font-weight: 900;
+  }
+
+  textarea {
+    resize: none;
+    font-family: sans-serif;
+  }
+
+  .submit-btn {
+    padding: 15px;
+    border-radius: 10px;
+    width: 75px; 
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 5px;
+  }
+
+  .form-row {
+      display:flex;
+  }
+
+  .col-md-6 {
+      flex: 6
+  }
+
+  .col-md-4 {
+    flex: 4;
+    margin: 0px 5px;
+}
+
+.col-md-2 {
+    flex: 2
+}
+
+  @media (max-width: 840px) {
+    .register-container {
+        flex-direction: column;
+    }
+    .register-info h1 {
+        margin-bottom: 5px;
+    }
+    .register-info {
+        margin-bottom: 30px;
+    }
+    .form {
+        margin-bottom: 50px;
+    }
+}

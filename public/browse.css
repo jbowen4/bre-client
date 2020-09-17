@@ -1,0 +1,313 @@
+.browse {
+  background-color:white;
+}
+
+.browse h1 {
+  font-size:30px;
+}
+
+.browse h2 {
+  font-size:25px;
+}
+
+.browse h3 {
+  font-size: 20px;
+}
+
+.browse h4 {
+  font-size: 15px;
+}
+
+/* ============================ */
+/* Cards */
+/* ============================ */
+
+.card {
+    display: flex;
+    width: 550px;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    color: #707070;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+    transition: height 0.15s ease-out;
+    cursor: pointer;
+    flex-wrap:wrap;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .icon {
+    flex: 1;
+    align-self:center;
+  }
+  
+  .icon img {
+    border-radius: 50%;
+    margin:auto;
+    display:block;
+    width: 70%;
+    object-fit: cover;
+  }
+  
+  #hidden-type {
+    display: none;
+  }
+  
+  .type {
+    flex: 1;
+  }
+  
+  .type h4 {
+    float: right;
+    padding-right: 15px;
+  }
+  
+  .wordbox {
+    flex: 2;
+  }
+
+  #icon-img {
+    height:100px;
+    width:100px;
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      width: 85vw;
+    }
+  }
+  
+  @media (max-width: 475px) {
+    .type {
+      display: none;
+    }
+    #hidden-type {
+      display: block;
+    }
+  }
+
+  @media(max-width:600px) {
+    #icon-img {
+      height:80px;
+      width:80px;
+    }
+  }
+
+/* ============================ */
+/* Expanded Card */
+/* ============================ */
+
+.line {
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
+.horizontal {
+  flex:none;
+  width: 80%;
+}
+
+.vertical {
+  height: 80%;
+}
+
+.hidden-card {
+  display:none;
+}
+
+.expanded {
+  display:flex;
+  flex:none;
+  width: 100%;
+  padding:0 10px 10px 10px;
+  box-sizing:border-box;
+}
+
+.description {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-items {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact {
+  padding: 5px;
+  background-color:#fff;
+  border-radius:5px;
+  display:block;
+  margin-bottom: 10px;
+  width:fit-content;
+  direction:rtl;
+  text-decoration:none;
+  color:black;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ============================ */
+/* Filter */
+/* ============================ */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .type-button {
+    width: 62.5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    height: 100%;
+    text-transform:capitalize;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .dropdown:hover #myDropdown {display: block;}
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+  
+  .dropdown-content a {
+    display: block;
+  text-align: left;
+  text-decoration: none;
+  padding: 7px 12px 7px 12px;
+  font-size: 18px;
+  color: black;
+  cursor:pointer;
+  }
+
+  .head {
+    margin: 0 0 30px 0;
+    width: 100%;
+    text-align: center;
+  }
+    
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .drop-option {
+    text-transform:capitalize;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+  }
+  
+  button {
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .search {
+    height: 100%;
+    float: left;
+    width: 90%;
+    margin: 0;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+  }
+  
+  input[type="search"]::-webkit-search-cancel-button {
+    color: black;
+    background-color: black;
+  }
+  
+  .filterbox {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    clear:both;
+  }
+  
+  .searchbox {
+    overflow:hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 10px #f0f0f0;
+    width: 500px;
+    display: inline-block;
+  
+  }
+  
+  .search-button {
+    background-color: black;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    height:100%;
+  }
+  
+  .fa-search-location {
+    color:white;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 0.3;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0.3;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.3;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    opacity: 0.3;
+  }
+
+/* ============================ */
+/* How To */
+/* ============================ */
+
+.how-to {
+  display:block;
+}
+
+
+
+
+  @media (max-width: 595px) {
+    .type-button {
+      width: 40px;
+    }
+    .searchbox {
+      width: 80vw;
+    }
+    .search-button {
+      width: 12%;
+    }
+    .search {
+      width: 88%;
+    }
+  }
+
+ 
